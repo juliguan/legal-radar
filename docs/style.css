@@ -1,5 +1,5 @@
-/* Legal Radar: stijl geleend van PEKL (dille, grachtenroze, room, flessengroen; Fugaz One + Archivo). */
-:root{--dille:#8FAE87;--roze:#EBB3A9;--room:#F5F0E1;--pekel:#E3E2AE;--green:#264D33;--ink:#16271C;--muted:#2C4434;--line:rgba(22,39,28,.28);
+/* Legal Radar: opmaak van PEKL, eigen kleuren (inktblauw, amber, ivoor; Fugaz One + Archivo). */
+:root{--dille:#8EA4CC;--roze:#F0C987;--room:#F4F1EA;--pekel:#E9DDB0;--green:#1B2A4A;--ink:#0F1A30;--muted:#27365A;--line:rgba(15,26,48,.28);
 --display:"Fugaz One","Arial Black",sans-serif;--body:"Archivo",system-ui,-apple-system,sans-serif;--gutter:20px;--radius:18px;--ease:cubic-bezier(.22,1,.36,1)}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;background:var(--dille);scroll-behavior:smooth}
@@ -27,8 +27,8 @@ header.top nav{display:none;gap:22px}header.top nav a{font:700 11px var(--body);
 section{padding:56px 0}.tool{background:var(--room);border-radius:var(--radius);padding:22px;box-shadow:0 1px 0 var(--line)}
 @media(min-width:760px){.tool{padding:34px}}
 .tool label{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--green)}
-textarea{display:block;width:100%;min-height:140px;margin:10px 0 14px;padding:16px 20px;font:500 16px/1.5 var(--body);color:var(--ink);background:rgba(143,174,135,.18);border:1.5px solid var(--green);border-radius:var(--radius);resize:vertical;transition:background-color .2s,box-shadow .2s}
-textarea:focus{background:#fff;outline:none;box-shadow:0 0 0 4px rgba(38,77,51,.18)}
+textarea{display:block;width:100%;min-height:140px;margin:10px 0 14px;padding:16px 20px;font:500 16px/1.5 var(--body);color:var(--ink);background:rgba(142,164,204,.2);border:1.5px solid var(--green);border-radius:var(--radius);resize:vertical;transition:background-color .2s,box-shadow .2s}
+textarea:focus{background:#fff;outline:none;box-shadow:0 0 0 4px rgba(27,42,74,.2)}
 .examples{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
 .demo-note{margin:14px 0 0;font-size:13px;color:var(--muted)}.demo-note b{color:var(--green)}
 .results{display:grid;gap:12px;margin-top:22px}
@@ -48,7 +48,7 @@ details ul{padding-left:18px;font-size:14px}details li{margin:6px 0}
 .card h3{font-family:var(--display);text-transform:uppercase;font-size:20px;line-height:1.05;color:var(--green);margin:10px 0}
 .card p{font-size:15px;margin:0}
 .steps{display:grid;gap:0;margin-top:30px;border-top:1.5px solid var(--line)}
-.steps div{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:20px 0;border-bottom:1.5px solid var(--line)}
+.steps>div{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:20px 0;border-bottom:1.5px solid var(--line)}
 .steps .n{font-family:var(--display);font-size:30px;color:var(--room);line-height:1}.steps h3{font:700 17px var(--body);margin-bottom:4px}.steps p{margin:0;font-size:15px;max-width:640px}
 .limits{background:var(--roze);border-radius:var(--radius);padding:26px}.limits ul{margin:12px 0 0;padding-left:20px}.limits li{margin:8px 0}
 footer{padding:40px 0 60px;border-top:1.5px solid var(--line);font-size:14px}footer .wrap{display:flex;flex-wrap:wrap;gap:14px 28px;justify-content:space-between;align-items:center}
