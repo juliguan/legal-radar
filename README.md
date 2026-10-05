@@ -2,6 +2,8 @@
 
 Een kleine Nederlandstalige tool die bij een vrij beschreven ondernemersidee aanwijst **op welke rechtsgebieden iemand moet letten**. De tool geeft nooit een oordeel over of iets mag. Het is een portfolioproject, geen juridisch product.
 
+**Demo online:** https://juliguan.github.io/legal-radar/ (draait in de browser met trefwoorden, zonder model)
+
 *Laatst gecontroleerd op 5 oktober 2026 (bronnen en wetgeving). De inhoud van `data/legal_areas.yaml` staat overal op `verified: false`: er is nog geen jurist overheen gegaan.*
 
 ## Welk probleem lost het op
