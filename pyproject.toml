@@ -10,6 +10,7 @@ dev = ["pytest"]
 
 [project.scripts]
 legal-radar = "legal_radar.cli:main"
+legal-radar-web = "legal_radar.web:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -35,6 +35,7 @@ python3 -m venv .venv && .venv/bin/pip install -e ".[dev]"
 cp .env.example .env        # vul ANTHROPIC_API_KEY in; .env wordt nooit gecommit
 .venv/bin/legal-radar "Ik verkoop een sportshot die spierkramp voorkomt"
 .venv/bin/legal-radar -f cases/03_bitcoin_opsporen/idea.txt --json
+.venv/bin/legal-radar-web      # webinterface op http://127.0.0.1:8000 (demo-modus zonder API-sleutel)
 ```
 
 Het model stel je in met `LEGAL_RADAR_MODEL` (standaard `claude-sonnet-5-5`).
