@@ -1,0 +1,1 @@
+Ik bouw een app die mensen helpt hun verloren bitcoin op te sporen. Gebruikers voeren oude wallet-adressen en backups in, wij zoeken op de blockchain waar de coins zijn gebleven en proberen de toegang te herstellen. We vragen vooraf 500 euro en daarna 20 procent van het teruggevonden bedrag. Als het nodig is, bewaren wij tijdelijk de seed phrase van de klant.

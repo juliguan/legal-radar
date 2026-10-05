@@ -1,0 +1,1 @@
+We maken een dashboard dat voorspelt hoe druk een restaurant of café wordt. We koppelen met het kassasysteem en gebruiken per bon het tijdstip, de bestelde producten, het tafelnummer en, als die er is, het nummer van de klantenpas. Eigenaren zien een voorspelling per dag en per uur. We verkopen het als abonnement aan horecaondernemers; consumenten gebruiken de app niet.
