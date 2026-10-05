@@ -1,0 +1,18 @@
+[project]
+name = "legal-radar"
+version = "0.1.0"
+description = "Oriëntatie op rechtsgebieden bij een ondernemersidee (geen juridisch advies)"
+requires-python = ">=3.11"
+dependencies = ["anthropic>=0.40", "pydantic>=2", "pyyaml", "python-dotenv"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+legal-radar = "legal_radar.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
