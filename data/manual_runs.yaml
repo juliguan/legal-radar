@@ -1,0 +1,74 @@
+# Handmatig opgestelde beoordelingen (GEEN API-aanroep en GEEN run van eval.py).
+# Opgesteld door Claude in een sessie, volgens dezelfde regels als de systeemprompt in src/legal_radar/classify.py.
+# De uitkomsten gaan wel door de echte code: citaat-check (quotes.py) en scoring (eval.py).
+# Niet blind: de verwachtingen in cases/*/expected.yaml zijn door dezelfde auteur geschreven.
+meta:
+  label: "Handmatige beoordeling door Claude, geen modelmeting"
+  made_on: "2026-10-06"
+runs:
+  01_sportshot_spierkramp:
+    areas:
+      - {area_id: privacy, status: onzeker, trigger_id: privacy_q1, quote: "via een webshop"}
+      - {area_id: consumentenrecht, status: relevant, trigger_id: consumenten_q2, quote: "spierkramp voorkomt en sneller herstel geeft"}
+      - {area_id: productaansprakelijkheid, status: relevant, trigger_id: product_q1, quote: "sportshot van 60 ml"}
+      - {area_id: voedsel_gezondheidsclaims, status: relevant, trigger_id: voedsel_q3, quote: "spierkramp voorkomt"}
+      - {area_id: financieel, status: niet_relevant}
+  02_fietsveiligheid_ouderen:
+    areas:
+      - {area_id: privacy, status: onzeker, trigger_id: privacy_q1, quote: "via onze webshop"}
+      - {area_id: consumentenrecht, status: relevant, trigger_id: consumenten_q1, quote: "verkopen ze via onze webshop"}
+      - {area_id: productaansprakelijkheid, status: relevant, trigger_id: product_q3, quote: "We importeren de producten zelf"}
+      - {area_id: voedsel_gezondheidsclaims, status: niet_relevant}
+      - {area_id: financieel, status: niet_relevant}
+  03_bitcoin_opsporen:
+    areas:
+      - {area_id: privacy, status: onzeker, trigger_id: privacy_q1, quote: "oude wallet-adressen en backups"}
+      - {area_id: consumentenrecht, status: onzeker, trigger_id: consumenten_q1, quote: "We vragen vooraf 500 euro"}
+      - {area_id: productaansprakelijkheid, status: niet_relevant}
+      - {area_id: voedsel_gezondheidsclaims, status: niet_relevant}
+      - {area_id: financieel, status: relevant, trigger_id: financieel_q3, quote: "bewaren wij tijdelijk de seed phrase van de klant"}
+  04_ai_reisplanner:
+    areas:
+      - {area_id: privacy, status: relevant, trigger_id: privacy_q2, quote: "gezondheids- en dieetwensen"}
+      - {area_id: consumentenrecht, status: relevant, trigger_id: consumenten_q3, quote: "abonnement van 7 euro per maand"}
+      - {area_id: productaansprakelijkheid, status: niet_relevant}
+      - {area_id: voedsel_gezondheidsclaims, status: niet_relevant}
+      - {area_id: financieel, status: niet_relevant}
+  05_horeca_drukte_dashboard:
+    areas:
+      - {area_id: privacy, status: relevant, trigger_id: privacy_q1, quote: "het nummer van de klantenpas"}
+      - {area_id: consumentenrecht, status: niet_relevant}
+      - {area_id: productaansprakelijkheid, status: niet_relevant}
+      - {area_id: voedsel_gezondheidsclaims, status: niet_relevant}
+      - {area_id: financieel, status: niet_relevant}
+  06_kleding_resale_webshop:
+    areas:
+      - {area_id: privacy, status: relevant, trigger_id: privacy_q1, quote: "Klanten maken een account"}
+      - {area_id: consumentenrecht, status: relevant, trigger_id: consumenten_q1, quote: "verkoop het door aan consumenten in heel Europa"}
+      - {area_id: productaansprakelijkheid, status: onzeker, trigger_id: product_q1, quote: "tweedehands designerkleding"}
+      - {area_id: voedsel_gezondheidsclaims, status: niet_relevant}
+      - {area_id: financieel, status: niet_relevant}
+  07_controle_dorpsgeschiedenis:
+    areas:
+      - {area_id: privacy, status: niet_relevant}
+      - {area_id: consumentenrecht, status: niet_relevant}
+      - {area_id: productaansprakelijkheid, status: niet_relevant}
+      - {area_id: voedsel_gezondheidsclaims, status: niet_relevant}
+      - {area_id: financieel, status: niet_relevant}
+  08_controle_b2b_rapport:
+    areas:
+      - {area_id: privacy, status: niet_relevant}
+      - {area_id: consumentenrecht, status: niet_relevant}
+      - {area_id: productaansprakelijkheid, status: niet_relevant}
+      - {area_id: voedsel_gezondheidsclaims, status: niet_relevant}
+      - {area_id: financieel, status: niet_relevant}
+# Bewust verzonnen citaat, om te laten zien dat de citaat-check het afwijst. Telt niet mee in de score.
+tamper_test:
+  case: 01_sportshot_spierkramp
+  note: "Zo'n citaat zou een model kunnen verzinnen; de code wijst het af."
+  areas:
+    - {area_id: privacy, status: niet_relevant}
+    - {area_id: consumentenrecht, status: niet_relevant}
+    - {area_id: productaansprakelijkheid, status: niet_relevant}
+    - {area_id: voedsel_gezondheidsclaims, status: relevant, trigger_id: voedsel_q3, quote: "helpt tegen krampen in de kuiten"}
+    - {area_id: financieel, status: niet_relevant}

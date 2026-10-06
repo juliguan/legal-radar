@@ -184,6 +184,11 @@ areas:
         source_url: "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force"
         evidence: primary_page
         verified: false
+      - date: "2027-12-02"
+        text: "Hoog-risico AI-systemen (Annex III) gaan pas vanaf deze datum gelden na de AI-omnibus; in producten (Annex I) vanaf 2 augustus 2028."
+        source_url: "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force"
+        evidence: primary_page
+        verified: false
       - date: "2026-08-02"
         text: "AI-verordening in beginsel van toepassing, inclusief transparantieplicht art. 50 (oorspronkelijke tekst art. 113). Of de omnibus voor art. 50 afwijkende data geeft, is niet in een primaire bron nagelezen: TODO verify."
         source_url: "https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32024R1689"
@@ -520,6 +525,11 @@ areas:
         verified: false
       - date: "2026-09-11"
         text: "Cyber Resilience Act meldplichten vanaf 11 september 2026; hoofdverplichtingen 11 december 2027 (secundaire bronnen)."
+        source_url: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
+        evidence: search_snippet
+        verified: false
+      - date: "2027-12-11"
+        text: "Cyber Resilience Act: hoofdverplichtingen voor producten met digitale elementen (secundaire bron; wettekst niet gelezen)."
         source_url: "https://digital-strategy.ec.europa.eu/en/policies/cra-reporting"
         evidence: search_snippet
         verified: false

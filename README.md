@@ -51,7 +51,7 @@ Het model stel je in met `LEGAL_RADAR_MODEL` (standaard `claude-sonnet-5-5`).
 
 `eval.py` rapporteert per gebied: **gemiste gebieden**, **onterechte alarmen** en het **aantal keer dat de citaat-check faalde**. De 8 cases in `cases/` zijn: sportshot tegen spierkramp, veiligheidsproducten voor oudere fietsers, app die verloren bitcoin opspoort, AI-reisplanner, dashboard dat horecadrukte voorspelt uit kassadata, kledingresale-webshop, en twee controlecases zonder juridisch risico. De verwachtingen in `expected.yaml` zijn mijn eigen inschatting en horen door een jurist te worden bijgesteld; gebieden waar redelijke mensen van mening kunnen verschillen staan onder `optional` en tellen niet als gemist of onterecht alarm.
 
-**Status van de evaluatie:** de scoringslogica is getest, maar er is nog geen echte run uitgevoerd omdat er bij het bouwen geen API-sleutel beschikbaar was. Er staan dus bewust geen scores in deze README.
+**Status van de evaluatie:** `eval.py` is getest met een nagebootste client, maar er is nog geen echte run met een model uitgevoerd (geen API-sleutel). Op de website staan wel voorbeelduitkomsten en een scorebord. Die zijn **handmatig opgesteld door Claude, zonder API** (`data/manual_runs.yaml`) en lopen door de echte citaat-check en scoring. Het is dus geen modelmeting. Het is ook niet blind: de verwachtingen in `expected.yaml` zijn door dezelfde auteur geschreven, dus een score van nul fouten zegt weinig. Een eerlijke meting vraagt `eval.py` met een model.
 
 ## Beperkingen
 
@@ -81,5 +81,8 @@ data/legal_areas.yaml      kennisbank (wetten, triggervragen, fouten, wijziginge
 research/<gebied>.md       leesbare samenvatting per gebied (gegenereerd uit de YAML + open punten)
 src/legal_radar/           models, areas (YAML), classify (model), quotes (citaat-check), report, cli
 cases/<case>/              idea.txt + expected.yaml
+build_site.py             genereert docs/data.json (voorbeelden, scorebord, tijdlijn) voor de site
+data/manual_runs.yaml     handmatige voorbeeldbeoordelingen (geen modelmeting)
+docs/                     statische GitHub Pages-site
 eval.py   tests/
 ```

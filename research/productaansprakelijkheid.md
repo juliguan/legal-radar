@@ -56,6 +56,7 @@ Wie fysieke consumentenproducten maakt, importeert of verkoopt moet ze veilig op
 - **2024-12-13**: GPSR van toepassing; Richtlijn 2001/95/EG ingetrokken. ([bron](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32023R0988), text_checked)
 - **2026-12-09**: Richtlijn (EU) 2024/2853 van toepassing op producten die na 9 december 2026 in de handel komen; software expliciet een product. Nederlands wetsvoorstel 36906 (implementatiewet): volgens zoekresultaten op 9 september 2026 aangemeld voor plenaire behandeling. TODO verify bij Tweede Kamer. ([bron](https://eur-lex.europa.eu/legal-content/NL/TXT/HTML/?uri=CELEX:32024L2853), text_checked)
 - **2026-09-11**: Cyber Resilience Act meldplichten vanaf 11 september 2026; hoofdverplichtingen 11 december 2027 (secundaire bronnen). ([bron](https://digital-strategy.ec.europa.eu/en/policies/cra-reporting), search_snippet)
+- **2027-12-11**: Cyber Resilience Act: hoofdverplichtingen voor producten met digitale elementen (secundaire bron; wettekst niet gelezen). ([bron](https://digital-strategy.ec.europa.eu/en/policies/cra-reporting), search_snippet)
 
 ## Tegenstrijdigheden tussen bronnen
 - Een zoekresultaat zegt dat GPSR art. 21 een terugroepbevoegdheid regelt; in de gelezen GPSR-tekst gaat art. 21 over 'Informatie in elektronisch formaat'. Dat zoekresultaat is dus niet gebruikt.

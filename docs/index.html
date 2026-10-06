@@ -13,7 +13,7 @@
 <body>
 <header class="top"><div class="wrap">
   <a class="wordmark" href="#">Legal Radar</a>
-  <nav><a href="#probeer">Probeer</a><a href="#gebieden">Gebieden</a><a href="#werking">Werking</a><a href="#grenzen">Grenzen</a></nav>
+  <nav><a href="#probeer">Probeer</a><a href="#voorbeelden">Voorbeelden</a><a href="#tijdlijn">Tijdlijn</a><a href="#gebieden">Gebieden</a><a href="#grenzen">Grenzen</a></nav>
   <a class="pill pill--solid" href="https://github.com/juliguan/legal-radar" target="_blank" rel="noopener">GitHub</a>
 </div></header>
 
@@ -32,8 +32,29 @@
     <div class="examples" id="examples"></div>
     <button id="go" class="pill pill--solid pill--lg" disabled>Toon rechtsgebieden</button>
     <p class="demo-note"><b>Demo-modus.</b> Deze pagina draait volledig in je browser met trefwoorden, zonder AI-model. Het echte model draait in de <a href="https://github.com/juliguan/legal-radar" target="_blank" rel="noopener">Python-tool</a>. Wetsverwijzingen komen uit de kennisbank, niet uit een model.</p>
+    <div id="marked" class="marked" hidden></div>
     <div class="results" id="results" aria-live="polite"></div>
   </div>
+</div></section>
+
+<section id="voorbeelden"><div class="wrap">
+  <div class="eyebrow">Voorbeelduitkomsten</div>
+  <h2 class="display display--md ruled">8 cases doorgerekend</h2>
+  <p class="honest" id="honest"></p>
+  <div class="examples" id="casetabs"></div>
+  <div class="tool" id="case"></div>
+  <h3 class="sub">Scorebord</h3>
+  <div class="tablewrap"><table id="score"></table></div>
+  <p class="demo-note" id="scorenote"></p>
+  <h3 class="sub">Wat de citaat-check doet</h3>
+  <div class="tool" id="tamper"></div>
+</div></section>
+
+<section id="tijdlijn"><div class="wrap">
+  <div class="eyebrow">Wat verandert er wanneer</div>
+  <h2 class="display display--md ruled">Tijdlijn</h2>
+  <div class="examples" id="tlfilter"></div>
+  <div id="tl"></div>
 </div></section>
 
 <section id="gebieden"><div class="wrap">
