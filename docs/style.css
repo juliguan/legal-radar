@@ -77,3 +77,7 @@ th:first-child,td:first-child{text-align:left}th{font:700 11px var(--body);lette
 .evbar{display:flex;height:8px;border-radius:99px;overflow:hidden;margin-top:14px;background:var(--line)}.evbar i{display:block;height:100%}
 .ev-text_checked{background:var(--green)}.ev-primary_page{background:#4C6BAA}.ev-search_snippet{background:var(--pekel)}.ev-secondary{background:var(--roze)}
 .evnote{font-size:12px;color:var(--muted);margin-top:6px}
+/* Sprong via het menu: kop niet onder de vaste balk laten verdwijnen */
+section[id]{scroll-margin-top:76px}
+/* Case-tabs: op mobiel één horizontaal scrollbare rij i.p.v. acht regels */
+@media(max-width:759px){#casetabs{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;margin-inline:calc(var(--gutter)*-1);padding-inline:var(--gutter);-webkit-overflow-scrolling:touch;scrollbar-width:none}#casetabs::-webkit-scrollbar{display:none}#casetabs .pill{flex:none}}

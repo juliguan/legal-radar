@@ -108,7 +108,7 @@ function renderCards() {
   }).join("");
 }
 
-fetch("data.json").then((r) => r.json()).then((d) => {
+fetch("data.json?v=20261006b").then((r) => r.json()).then((d) => {
   DATA = d;
   renderCards(); renderRuns();
   $("tlfilter").innerHTML = `<button type="button" class="pill is-on" data-a="all">Alles</button>` + d.areas.map((a) => `<button type="button" class="pill" data-a="${a.id}">${esc(SHORT[a.id] || a.name)}</button>`).join("");
